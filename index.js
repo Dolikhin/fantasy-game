@@ -1,4 +1,6 @@
 
+import Validator from './src/js/Validator.js';
+
 import Team from './src/js/Team.js';
 import Character from './src/js/character.js';
 import Bowman from './src/js/bowman.js';
