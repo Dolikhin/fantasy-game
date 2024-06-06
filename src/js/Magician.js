@@ -9,3 +9,4 @@ class Magician extends Character {
 }
 
 export default Magician;
+
