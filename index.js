@@ -24,5 +24,14 @@ console.log(errorRepo.translate(500)); // Output: Internal Server Error
 console.log(errorRepo.translate(403)); // Output: Forbidden
 console.log(errorRepo.translate(123)); // Output: Unknown error
 
+import GameSavingLoader from './GameSavingLoader';
 
+(async () => {
+  try {
+    const saving = await GameSavingLoader.load();
+    console.log(saving); // объект класса GameSaving
+  } catch (error) {
+    console.error(error.message);
+  }
+})();
 
